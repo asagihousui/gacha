@@ -32,5 +32,14 @@ function buttonClick(){
 
 function buttonClick(){
     //id属性追加
+    const imageDisplay2 = document.getElementById('imageDisplay2');
     imageDisplay2.classList.add("move");
 }
+
+const imageDisplay2 = document.getElementById('imageDisplay2');
+
+imageDisplay2.addEventListener('animationend',() => {
+    //アニメーション終了時
+    imageDisplay2.classList.remove('move');
+    console.log('アニメーション終了。id:moveを削除しました。')
+});
