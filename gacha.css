@@ -1,0 +1,90 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;}
+body {
+    justify-content: center;/*水平方向に中央揃え*//*垂直方向に中央揃え*/
+}
+
+header {
+    align-items: center;
+    display: flex;
+    width: 95%;
+    height: 100px;
+    background-color: darkgrey;
+    margin: 0 auto;
+}
+
+
+.menu ul {
+    list-style: none; /* リストの点を消す */
+    margin: 0;
+    padding: 0;
+    display: flex; /* 子要素を横並びにする */
+}
+
+.menu li {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.gacha {
+    background-color: rgb(194, 194, 194);
+    width: 95%;
+    height: 90%;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+}
+.directory {
+    background-color: rgb(232, 232, 232);
+    width: 95%;
+    height: 300px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+}
+.imageDisplay {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.imageDisplay2 {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.move {
+    animation: animationZoom 1.5s ease-in-out forwards;
+}
+
+@keyframes animationZoom {
+    0% {
+        width: 500px;
+        height: auto;
+        transform: scale(80%);
+    }
+    80% {
+        width: 500px;
+        height: auto;
+        transform: scale(110%);
+    }
+    100% {
+        width: 500px;
+        height: auto;
+        transform: scale(100%);
+      }
+  }
+
+  .gacha-start {
+    width: 100px;
+    height: 70px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 15px;
+    transition: background-color 1s
+  }
+.gacha-start:hover{
+    background-color: white;
+    content: "Button";
+
+  }
