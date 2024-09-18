@@ -60,18 +60,12 @@ header {
 
 @keyframes animationZoom {
     0% {
-        width: 500px;
-        height: auto;
         transform: scale(80%);
     }
     80% {
-        width: 500px;
-        height: auto;
         transform: scale(110%);
     }
     100% {
-        width: 500px;
-        height: auto;
         transform: scale(100%);
       }
   }
