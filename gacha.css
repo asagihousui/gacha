@@ -39,14 +39,29 @@ header {
 .directory {
     background-color: rgb(232, 232, 232);
     width: 95%;
-    height: 300px;
+    max-height: 600px;
     position: relative;
     top: 10px;
     margin: 0 auto;
 }
 .imageDisplay {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.imageDisplay3 {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.imageDisplay4 {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.imageDisplay5 {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .imageDisplay2 {
@@ -54,8 +69,60 @@ header {
     max-height: 500px;
 }
 
+
+  .gacha-start {
+    width: 100px;
+    height: 70px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 15px;
+    transition: 1s
+  }
+.gacha-start:hover{
+    background-color: white;
+    content: "Button";
+
+  }
+
+#imageDisplay {
+    position: relative;
+}
+
+  #imageDisplay-SSR {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+  #imageDisplay-SR {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  #imageDisplay-NR {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  
 .move {
     animation: animationZoom 1.5s ease-in-out forwards;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
 }
 
 @keyframes animationZoom {
@@ -70,15 +137,10 @@ header {
       }
   }
 
-  .gacha-start {
-    width: 100px;
-    height: 70px;
-    background-color: rgb(68, 68, 68);
-    border-radius: 15px;
-    transition: background-color 1s
+  .randomresult {
+    opacity: 1;
   }
-.gacha-start:hover{
-    background-color: white;
-    content: "Button";
 
+  .opacity {
+    opacity: 0;
   }

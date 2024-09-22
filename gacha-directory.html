@@ -10,7 +10,6 @@
     <header>
         <div class="menu">
             <ul>
-        <li class="menulink">設定</li>
         <li class="menulink">ガチャ画面</li>
         <li class="menulink">お知らせ</li>
         <li class="menulink">使い方</li>
@@ -18,13 +17,23 @@
         </div>
     </header>
     <div class="directory">
-        <p>画像を選択してください</p>
+        <p>画像を3つ選択してください</p>
         <img id="imageDisplay" src="#" alt="選択した画像" class="imageDisplay">
         <input type="file" id="imageUpload" accept="image/*">
+        <br>
+        <img id="imageDisplay3" src="#" alt="選択した画像" class="imageDisplay3">
+        <input type="file" id="imageUpload3" accept="image/*">
+        <br>
+        <img id="imageDisplay4" src="#" alt="選択した画像" class="imageDisplay4">
+        <input type="file" id="imageUpload4" accept="image/*">
         <br><br>
     </div>
     <div class="gacha">
-        <img id="imageDisplay2" src="#" alt="" class="imageDisplay2">
+        <div id="imageDisplay2">
+        <img id="imageDisplay-SSR" src="#" alt="" class="imageDisplay2" >
+        <img id="imageDisplay-SR" src="#" alt="" class="imageDisplay2" >
+        <img id="imageDisplay-NR" src="#" alt="" class="imageDisplay2" >
+        </div>
         <button id="gacha-start" class="gacha-start" onclick="buttonClick()">ガチャを引く</button>
         <script src="gacha.js">
         </script>
