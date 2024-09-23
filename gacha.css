@@ -11,8 +11,15 @@ header {
     display: flex;
     width: 95%;
     height: 100px;
-    background-color: darkgrey;
     margin: 0 auto;
+    background-image: url(2024.09.23.チェック.jpg);
+    background-size: 120px;
+}
+
+
+
+.menulink {
+  font-weight: bold;
 }
 
 
@@ -29,7 +36,8 @@ header {
 }
 
 .gacha {
-    background-color: rgb(194, 194, 194);
+    background-image: url(template_sakubun_youshi.jpg);
+    background-size: 100%;
     width: 95%;
     height: 90%;
     position: relative;
@@ -37,7 +45,6 @@ header {
     margin: 0 auto;
 }
 .directory {
-    background-color: rgb(232, 232, 232);
     width: 95%;
     max-height: 600px;
     position: relative;
@@ -69,22 +76,33 @@ header {
     max-height: 500px;
 }
 
+.Backimage {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 
   .gacha-start {
     width: 300px;
     height: 70px;
     border-radius: 15px;
-    transition: 1s;
+    font-weight: bold;
+    font-size: 15px; 
+    color: white;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     position: absolute;
     background: rgb(108, 108, 108);
+    background: linear-gradient(326deg, rgb(79, 82, 37) 29%, rgb(216, 236, 128) 48%, rgb(87, 87, 43) 56%, rgb(105, 112, 31) 75%);
+
   }
 .gacha-start:hover{
+  background: rgb(69,69,69);
+  background: linear-gradient(326deg, rgba(69,69,69,1) 29%, rgba(243,243,243,1) 48%, rgba(106,106,106,1) 56%, rgba(69,69,69,1) 75%);
     content: "Button";
-    background: linear-gradient(90deg, rgba(182,182,182,1) 0%, rgba(86,86,86,1) 0%, rgba(119,119,119,1) 15%, rgba(243,243,243,1) 35%, rgba(106,106,106,1) 87%);
+    
 
   }
 
@@ -149,3 +167,5 @@ header {
   .opacity {
     opacity: 0;
   }
+
+  

@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="gacha.css">
 </head>
 <body>
+    <div class="menuimg">
     <header>
         <div class="menu">
             <ul>
-        <li class="menulink">ガチャ画面</li>
+        <li class="menulink" style=" background: linear-gradient(transparent 40%, #fbfbfb 100%); ">→ガチャ画面</li>
         <li class="menulink">お知らせ</li>
         <li class="menulink">使い方</li>
             </ul>
         </div>
     </header>
+    </div>
     <div class="directory">
         <p>画像を3つ選択してください</p>
-        <br>
         <p>5%</p>
         <img id="imageDisplay" src="#" alt="選択した画像" class="imageDisplay">
         <input type="file" id="imageUpload" accept="image/*">
@@ -31,15 +32,20 @@
         <img id="imageDisplay4" src="#" alt="選択した画像" class="imageDisplay4">
         <input type="file" id="imageUpload4" accept="image/*">
         <br><br>
+        <img id="Backimage" src="#" alt="選択した画像" class="Backimage">
+        <input type="file" id="BackimageUpload" accept="image/*">
+        <br><br>
     </div>
     <br>
     <div class="gacha">
+        <p id="gacharresult"></p>
         <div id="imageDisplay2">
         <img id="imageDisplay-SSR" src="#" alt="" class="imageDisplay2" >
         <img id="imageDisplay-SR" src="#" alt="" class="imageDisplay2" >
         <img id="imageDisplay-NR" src="#" alt="" class="imageDisplay2" >
         </div>
-        <button id="gacha-start" class="gacha-start" onclick="buttonClick()">ガチャを引く</button>
+        <button id="gacha-start" class="gacha-start" onclick="buttonClick()">ガチャを引く!</button>
+        <img id="gachaback" src=>
         <script src="gacha.js">
         </script>
     </div>

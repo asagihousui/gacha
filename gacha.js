@@ -74,6 +74,28 @@ document.getElementById('imageUpload4').addEventListener('change', function(even
     }
 });
 
+document.getElementById('BackimageUpload').addEventListener('change', function(event) {
+    const file = event.target.files[0]; //選択されたファイルを取得 
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        document.getElementById('Backimage').src = e.target.result; //画像を表示
+        console.log(e.target.result);
+    };
+    if (file) {
+        reader.readAsDataURL(file); //画像ファイルをData URLとして読み込む
+    }
+});
+document.getElementById('BackimageUpload').addEventListener('change', function(event) {
+    const file = event.target.files[0]; //選択されたファイルを取得 
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        document.getElementById('gachaback').src = e.target.result; //画像を表示
+        console.log(e.target.result);
+    };
+    if (file) {
+        reader.readAsDataURL(file); //画像ファイルをData URLとして読み込む
+    }
+});
 
 function buttonClick(){
     //id属性追加
@@ -110,6 +132,8 @@ const imageSR = document.getElementById('imageDisplay-SR');
 imageSR.classList.add("opacity");
 const imageNR = document.getElementById('imageDisplay-NR');
 imageNR.classList.add("opacity");
+
+const gachatext = document.getElementById('gacharrsult');
 
 //透明度設定
 
