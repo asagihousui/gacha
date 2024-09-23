@@ -71,15 +71,20 @@ header {
 
 
   .gacha-start {
-    width: 100px;
+    width: 300px;
     height: 70px;
-    background-color: rgb(68, 68, 68);
     border-radius: 15px;
-    transition: 1s
+    transition: 1s;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background: rgb(108, 108, 108);
   }
 .gacha-start:hover{
-    background-color: white;
     content: "Button";
+    background: linear-gradient(90deg, rgba(182,182,182,1) 0%, rgba(86,86,86,1) 0%, rgba(119,119,119,1) 15%, rgba(243,243,243,1) 35%, rgba(106,106,106,1) 87%);
 
   }
 
